@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_220sdp"
+                android:src="@drawable/shape_bottom_corner"
+                android:tint="@color/colorPrimary"
+                tools:ignore="UseAppTint" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:text="Select Target Type"
+                    android:gravity="center|start"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    app:cardElevation="@dimen/_3sdp"
+                    app:cardCornerRadius="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_frag_ta_target_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/smoke_white">
+
+                        <TextView
+                            android:id="@+id/tv_frag_ta_target_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Select Target Type"
+                            android:gravity="center|start"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:src="@drawable/ic_down_arrow"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:text="Select Target Level"
+                    android:gravity="center|start"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    app:cardElevation="@dimen/_3sdp"
+                    app:cardCornerRadius="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_frag_ta_target_level"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/smoke_white">
+
+                        <TextView
+                            android:id="@+id/tv_frag_ta_target_level"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Select Target Level"
+                            android:gravity="center|start"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:src="@drawable/ic_down_arrow"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:text="Select Time Frame"
+                    android:gravity="center|start"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="@dimen/_3sdp"
+                    app:cardCornerRadius="@dimen/_10sdp">
+
+                    <RadioGroup
+                        android:id="@+id/rg_frag_ta_time_frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/_30sdp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_frag_ta_time_frame_monthly"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Monthly"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_frag_ta_time_frame_yearly"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Yearly"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_frag_ta_time_frame_custom"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Custom"
+                            android:maxLines="2"/>
+
+                    </RadioGroup>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_180sdp">
+
+                <LinearLayout
+                    android:id="@+id/ll_frag_ta_dtls"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardCornerRadius="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        app:cardBackgroundColor="#E76B1F">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Target"
+                                android:textSize="@dimen/_12sdp"
+                                android:gravity="center"
+                                android:textColor="@color/white"/>
+
+                            <TextView
+                                android:id="@+id/tv_frag_ta_target"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:textSize="@dimen/_16sdp"
+                                android:textStyle="bold"
+                                android:gravity="center|top"
+                                android:textColor="@color/white"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <Space
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="match_parent"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:cardElevation="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        app:cardCornerRadius="@dimen/_15sdp"
+                        app:cardBackgroundColor="#10AD65">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Achievement"
+                                android:textSize="@dimen/_12sdp"
+                                android:gravity="center"
+                                android:textColor="@color/white"/>
+
+                            <TextView
+                                android:id="@+id/tv_frag_ta_achv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:textSize="@dimen/_16sdp"
+                                android:textStyle="bold"
+                                android:gravity="center|top"
+                                android:textColor="@color/white"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="@dimen/_250sdp"
+                    app:cardElevation="@dimen/_5sdp"
+                    app:cardBackgroundColor="#FFD633">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="VS"
+                        android:gravity="center"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:gravity="center|start"
+                    android:layout_marginTop="@dimen/_62sdp">
+
+                    <ImageView
+                        android:id="@+id/iv_frag_ta_target_pointer"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:rotation="-180"
+                        android:layout_marginLeft="@dimen/_73sdp"
+                        android:visibility="invisible"/>
+
+
+                    <ImageView
+                        android:id="@+id/iv_frag_ta_achv_pointer"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:rotation="-180"
+                        android:layout_marginLeft="@dimen/_116sdp"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+
+
+        <com.ekn.gruzer.gaugelibrary.HalfGauge
+            android:id="@+id/half_gauge"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                app:cardElevation="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E76B1F" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Target"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/_10sdp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                app:cardElevation="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_30sdp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#01A049" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Achievement"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
